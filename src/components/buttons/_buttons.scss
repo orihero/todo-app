@@ -1,0 +1,8 @@
+@import "../../assets/styles/variables";
+.rect {
+    box-shadow: 0 4px 8px 0 $default-red, 0 6px 20px 0 $default-red;
+    border-radius: 8px;
+    background-color: $default-red;
+    width: 200px;
+    height: 200px;
+}

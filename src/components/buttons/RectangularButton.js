@@ -1,8 +1,8 @@
 import React from "react";
-import "./buttons.style.css";
+import "./_buttons.scss";
 
 let RectangularButton = () => {
-  return <div className="rect"></div>;
+  return <div className="rect"> </div>;
 };
 
 export default RectangularButton;
