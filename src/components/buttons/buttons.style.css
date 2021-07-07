@@ -1,0 +1,7 @@
+.rect {
+    box-shadow: 0 4px 8px 0 #f25f5c, 0 6px 20px 0 #f25f5c;
+    border-radius: 8px;
+    background-color: #f25f5c;
+    width: 200px;
+    height: 200px;
+}
