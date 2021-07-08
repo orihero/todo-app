@@ -1,0 +1,4 @@
+@import "./mixins";
+.card {
+    @include card-wrapper();
+}

@@ -1,0 +1,15 @@
+@import './variables';
+@mixin card-wrapper($margin:30px, $padding:30px, $border-radius:8px, $background-color:white) {
+    background-color: $background-color;
+    margin: $margin;
+    padding: $padding;
+    box-shadow: $card-shadow;
+    border-radius: $border-radius;
+    flex: 1;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

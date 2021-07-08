@@ -1,8 +1,29 @@
 @import "../../assets/styles/variables";
+@import "../../assets/styles/mixins";
 .rect {
-    box-shadow: 0 4px 8px 0 $default-red, 0 6px 20px 0 $default-red;
+    box-shadow: $rect-shadow;
     border-radius: 8px;
     background-color: $default-red;
     width: 200px;
     height: 200px;
+}
+
+.circle {
+    background-color: $default-red;
+    width: $circle-size;
+    height: $circle-size;
+    border-radius: $circle-size;
+    font-size: 60px;
+    color: white;
+    @include flex-center;
+}
+
+.round {
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    background-color: $default-red;
+    font-weight: bold;
+    color: white;
+    @include flex-center;
 }
