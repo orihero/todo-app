@@ -5,7 +5,16 @@
     border-radius: 8px;
     background-color: $default-red;
     width: 200px;
-    height: 200px;
+    height: 90px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    @include flex-center;
+}
+
+.no-shadow {
+    @extend .rect;
+    box-shadow: none;
 }
 
 .circle {

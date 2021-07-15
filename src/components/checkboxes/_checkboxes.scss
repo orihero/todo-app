@@ -1,0 +1,49 @@
+@import "../../assets/styles/variables";
+input[type="checkbox"] {
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    background-image: none;
+    background-color: white;
+    border: 2px solid $default-red;
+    border-radius: 8px;
+    color: $default-red;
+    flex: 0;
+    outline: none;
+    cursor: pointer;
+    top: 38px;
+    margin: 30px 0px;
+}
+
+input[type="checkbox"]:checked::after {
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: inline-block;
+    background-image: url("../../assets/icons/check-mark.svg");
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="checkbox"]:focus {
+    border-color: $default-red;
+}
+
+input[type="checkbox"]:hover {
+    border-color: $default-red;
+}
+
+label {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.checked {
+    text-decoration: line-through $default-red 4px;
+}

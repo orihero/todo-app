@@ -1,8 +1,8 @@
 import React from "react";
 import "./_buttons.scss";
 
-let RectangularButton = () => {
-  return <div className="rect"> </div>;
+let RectangularButton = ({ children, hasShadow = false }) => {
+  return <div className={!hasShadow ? "no-shadow" : "rect"}> {children} </div>;
 };
 
 export default RectangularButton;
